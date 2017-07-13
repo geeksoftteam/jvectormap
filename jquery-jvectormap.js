@@ -5,7 +5,15 @@
  *
  */
 
-(function( $ ){
+(function (factory) {
+  if(typeof define === "function" && define.amd) {
+    define(["jquery", "jquery-mousewheel"], factory);
+  } else if(typeof module === "object" && module.exports) {
+    module.exports = factory(require("jquery"), require("jquery-mousewheel"));
+  } else {
+    factory(jQuery);
+  }
+} (function( $, mousewheel ){
   var apiParams = {
         set: {
           colors: 1,
@@ -41,4 +49,4 @@
 
     return this;
   };
-})( jQuery );
+}));
