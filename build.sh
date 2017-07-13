@@ -45,9 +45,9 @@ done
 
 if [ -z "$1" ]
   then
-    minified=jquery-jvectormap.min.js
+    minified=dist/jquery-jvectormap.min.js
   else
-    minified=$1
+    minified=dist/$1
 fi
 
 if [ -a $minified ]
@@ -55,6 +55,13 @@ if [ -a $minified ]
     rm $minified
 fi
 
-cat ${files[*]} >> $minified
+file=dist/jquery-jvectormap.js
 
-node_modules/.bin/uglifyjs $minified -o $minified -c
+if [ -a $file ]
+  then
+    rm $file
+fi
+
+cat ${files[*]} >> $file
+
+node_modules/.bin/uglifyjs $file -o $minified -c
