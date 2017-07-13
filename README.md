@@ -9,7 +9,7 @@ Example
 var $ = require('jquery');
 
 // load jvectormap jquery plugin
-require('jvectormap-next')($);
+require('jvectormap')($);
 
 // render the map
 var gdpData = {
