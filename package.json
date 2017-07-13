@@ -16,7 +16,7 @@
   "contributors": [
     "Alexandre Paixao <alexandre.paixao@live.fr>"
   ],
-  "main": "jquery-jvectormap.js",
+  "main": "dist/jquery-jvectormap.js",
   "repository": "alex-pex/jvectormap",
   "scripts": {
     "build": "./build.sh",
