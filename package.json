@@ -24,7 +24,7 @@
   },
   "dependencies": {
     "jquery": ">=1.5",
-    "jquery-mousewheel": "^3.1.9"
+    "jquery-mousewheel": "git@github.com:geeksoftteam/jquery-mousewheel.git"
   },
   "devDependencies": {
     "uglify-js": "^3.0.0"
