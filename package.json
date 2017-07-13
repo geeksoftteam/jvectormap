@@ -23,9 +23,10 @@
     "prepublish": "npm run build"
   },
   "dependencies": {
-    "jquery": ">=1.5"
+    "jquery": ">=1.5",
+    "jquery-mousewheel": "^3.1.9"
   },
   "devDependencies": {
-    "uglifyjs": "^2.4.10"
+    "uglify-js": "^3.0.0"
   }
 }

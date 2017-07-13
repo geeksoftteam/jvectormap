@@ -2,7 +2,6 @@
 
 files=( \
   jquery-jvectormap.js \
-  lib/jquery-mousewheel.js \
   src/jvectormap.js \
   src/abstract-element.js \
   src/abstract-canvas-element.js \
@@ -58,4 +57,4 @@ fi
 
 cat ${files[*]} >> $minified
 
-uglifyjs $minified -o $minified -c
+node_modules/.bin/uglifyjs $minified -o $minified -c
